@@ -7,9 +7,8 @@
 #include <ArduinoJson.h>
 
 namespace example {
-auto makeEmptyJson() const noexcept -> std::unique_ptr<StaticJsonDocument<128>> {
-  auto doc = std::unique_ptr<StaticJsonDocument<128>>(new (std::nothrow) StaticJsonDocument<128>());
-  if (!doc) return nullptr;
+auto makeEmptyJson() const noexcept -> StaticJsonDocument<128> {
+  auto doc = StaticJsonDocument<128>();
   doc->clear();
   return doc;
 }

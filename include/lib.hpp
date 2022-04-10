@@ -7,7 +7,7 @@
 #include <ArduinoJson.h>
 
 namespace example {
-auto makeEmptyJson() const noexcept -> StaticJsonDocument<128> {
+auto makeEmptyJson() noexcept -> StaticJsonDocument<128> {
   auto doc = StaticJsonDocument<128>();
   doc.clear();
   return doc;

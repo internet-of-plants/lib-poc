@@ -9,7 +9,7 @@
 namespace example {
 auto makeEmptyJson() const noexcept -> StaticJsonDocument<128> {
   auto doc = StaticJsonDocument<128>();
-  doc->clear();
+  doc.clear();
   return doc;
 }
 }

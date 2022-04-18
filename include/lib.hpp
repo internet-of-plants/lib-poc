@@ -2,7 +2,7 @@
 #define LIB_HPP
 
 #ifndef MY_DEFINITION
-#error "Must define MY_DEFINITION disable"
+#error "Must define MY_DEFINITION"
 #endif
 
 namespace example {

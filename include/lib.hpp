@@ -1,16 +1,11 @@
 #ifndef LIB_HPP
 #define LIB_HPP
 
-#ifndef ARDUINOJSON_ENABLE_ARDUINO_STRING
-#error "Must define ARDUINOJSON disable"
+#ifndef MY_DEFINITION
+#error "Must define MY_DEFINITION disable"
 #endif
-#include <ArduinoJson.h>
 
 namespace example {
-auto makeEmptyJson() noexcept -> StaticJsonDocument<128> {
-  auto doc = StaticJsonDocument<128>();
-  doc.clear();
-  return doc;
-}
+auto doNothing() noexcept -> void {}
 }
 #endif
